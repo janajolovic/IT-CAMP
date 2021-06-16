@@ -1,0 +1,7 @@
+.header {
+    height: 50px;
+    border-bottom: rgb(9, 9, 80);
+    border-style: solid;
+    border-width: 3px;
+    display: flex;
+}
