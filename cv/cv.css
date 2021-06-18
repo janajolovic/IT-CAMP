@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-}
+} 
 
 .header {
     width: 100%;
@@ -151,4 +151,100 @@ body {
     margin-bottom: 40px;
 }
 
+.div1 {
+    display: flex;
+    justify-content: center;
+}
 
+.message {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+.CONTACT h1 {
+    color: #61892F;
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.CONTACT h1:hover {
+    color: #222629;
+    text-decoration: #61892F underline;
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.CONTACT h2 {
+    color: #222629;
+    text-align: center;
+}
+
+.contact p{
+    border: #61892F solid 3px;
+    border-radius: 15px;
+    background-color: #c5c5c5;
+    color: #222629;
+    padding: 15px;
+    margin: 10px;
+    width: 400px;
+}
+
+#message1 {
+    height: 100px;
+}
+
+.button {
+    background-color: #61892F;
+    color: #222629;
+    border: #222629 solid 3px;
+    width: 100px;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+.button:hover {
+    background-color: #222629;
+    color: #61892F;
+    border: #61892F solid 3px;
+    width: 100px;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+.info {
+    display: flex;
+    justify-content: space-evenly;
+    color: #222629;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.info i {
+    font-size: 25px;
+    color: #61892F;
+    text-align: center;
+}
+
+.info i:hover {
+    font-size: 30px;
+    color: #222629;
+    text-align: center;
+}
+
+.info div {
+    text-align: center;
+    width: 30%;
+}
+
+h4 {
+    color: #222629;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
