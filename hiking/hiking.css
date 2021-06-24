@@ -1,0 +1,356 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.header {
+    height: 60px;
+    display: flex;
+    width: 100%;
+    border-bottom: #DEB37E solid 3px;
+    justify-content: center;
+    align-content: center;
+}
+
+.header p {
+    padding: 0;
+    color: #474747;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px 30px 0px 30px;
+    transition: 0.5s;
+}
+
+.header p:hover {
+    padding: 0;
+    color: #DEB37E;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 30px 0px 30px;
+    transform: rotate(-4deg);
+    text-decoration: underline;
+}
+
+.home {
+    background-image: url(https://images.pexels.com/photos/1230302/pexels-photo-1230302.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+.home_content {
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    margin-top: 15px;
+}
+
+.home h1 {
+    color: #DEB37E;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 2.3px;
+    text-shadow: 2px 0px 7px rgb(0 0 0 / 30%);
+    transition: 0.5s;
+}
+
+.home h1:hover {
+    color: #DEB37E;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 2.3px;
+    text-shadow: 2px 0px 7px rgb(0 0 0 / 30%);
+    transform: scale(1.1);
+}
+
+.home p{
+    font-size: 20px;
+    color: #474747;
+    letter-spacing: 1px;
+}
+
+.home button {
+    background-color: #f8dfc3;
+    color: #474747;
+    border: #474747 solid 2px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.home button:hover {
+    background-color: #DEB37E;
+    color: #474747;
+    border: #474747 solid 2px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    transform: translate(5px, 5px);
+}
+
+.letsgo .text h1{
+    text-align: center;
+    color: #DEB37E;
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.letsgo .text h1:hover{
+    text-align: center;
+    color: #474747;
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 30px;
+    text-decoration: underline #DEB37E;
+}
+
+.letsgo .text p {
+    text-align: center;
+    font-size: 18px;
+    color: #474747;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.img_text {
+    width: 25%;
+    height: 370px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: #474747 solid 1px;
+    margin: 20px;
+    background-color: #474747;
+    transition: 0.5s;
+} 
+
+.img_text img {
+    width: 100%;
+}
+
+.img_text p {
+    padding: 0px 15px;
+    text-align: left;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.img_text h1 {
+    margin-top: 10px;
+    color: white;
+    text-align: left;
+    font-size: 22px;
+    padding: 0px 15px;
+    font-weight: 400;
+}
+
+.img_text:hover {
+    width: 25%;
+    height: 370px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: #474747 solid 1px;
+    margin: 20px;
+    background-color: #DEB37E;
+    transform: scale(1.1);
+} 
+
+.discount {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.discount img {
+    width: 50%;
+}
+
+.discount_text {
+    background-color: #474747;
+    color: white;
+    padding: 100px 50px 100px 70px;
+    align-self: center;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.discount button {
+    background-color: #DEB37E;
+    color: #474747;
+    border: #474747 solid 2px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.discount button:hover {
+    background-color: #DEB37E;
+    color: #474747;
+    border: #474747 solid 2px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    transform: translate(5px, 5px);
+}
+
+.promo {
+    display: flex;
+    flex-direction: row;
+}
+
+.promo img {
+    width: 50%;
+    float: right;
+}
+
+.promo_text {
+    background-color: #DEB37E;
+    color: white;
+    padding: 100px 50px 100px 70px;
+    align-self: center;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    width: 45%;
+}
+
+.promo button {
+    background-color: #474747;
+    color: #DEB37E;
+    border: #DEB37E solid 2px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.promo button:hover {
+    background-color: #474747;
+    color: #DEB37E;
+    border: #DEB37E solid 2px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    transform: translate(5px, 5px);
+}
+
+.explore h1{
+    text-align: center;
+    color: #DEB37E;
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+.explore h1:hover{
+    text-align: center;
+    color: #474747;
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 40px;
+    text-decoration: underline #DEB37E;
+}
+
+.explore .explore1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.explore div {
+    padding: 0px 50px;
+    color: #474747;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 25px 0px;
+}
+
+.quote i {
+    color: #474747;
+    font-size: 30px;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.quote i:hover {
+    color: #DEB37E;
+    font-size: 30px;
+    transform: scale(1.15);
+    text-align: center;
+}
+
+.quote p {
+    text-align: center;
+    font-size: 18px;
+    color: #474747;
+}
+
+.footer {
+    background-color: #474747;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    letter-spacing: 1px;
+}
+
+.footer1 {
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+}
+
+.footer h1 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.footer h1:hover {
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.footer p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.footer1 .icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer1 .icons i{
+    font-size: 34px;
+    color: #242424;
+    margin: 5px 15px;
+    transition: 0.5s;
+}
+
+.footer1 .icons i:hover{
+    font-size: 34px;
+    color: #242424;
+    margin: 5px 15px;
+    transform: scale(1.2)
+}
