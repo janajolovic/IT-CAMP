@@ -121,6 +121,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin: 30px 0px;
 }
 
 .img_text {
@@ -132,11 +133,20 @@ body {
     border: #474747 solid 1px;
     margin: 20px;
     background-color: #474747;
-    transition: 0.5s;
+    transition: 1s;
+    box-shadow: 5px 5px 10px #474747;
 } 
 
 .img_text img {
     width: 100%;
+    background-color: gray;
+    opacity: 50%;
+}
+
+.img_text:hover img {
+    width: 100%;
+    background-color: gray;
+    opacity: 100%;
 }
 
 .img_text p {
@@ -164,7 +174,6 @@ body {
     justify-content: space-around;
     border: #474747 solid 1px;
     margin: 20px;
-    background-color: #DEB37E;
     transform: scale(1.1);
 } 
 
@@ -328,6 +337,7 @@ body {
     font-size: 20px;
     font-weight: 400;
     text-decoration: underline;
+    color: #DEB37E;
 }
 
 .footer p {
@@ -346,11 +356,11 @@ body {
     color: #242424;
     margin: 5px 15px;
     transition: 0.5s;
-}
+} 
 
 .footer1 .icons i:hover{
     font-size: 34px;
-    color: #242424;
+    color: #DEB37E;
     margin: 5px 15px;
     transform: scale(1.2)
 }
