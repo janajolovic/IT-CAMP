@@ -1,0 +1,519 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.HOME_CONTENT {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    height: 580px;
+    background-image: url(https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/10/landing-img-top.jpg);
+    background-repeat: no-repeat;
+    background-position: absolute;
+    background-size: cover;
+}
+
+.HOME_CONTENT img {
+    width: 365px;
+    height: 263px;
+    position: relative;
+    top: 150px;
+}
+
+.second_div {
+    font-family: Oswald;
+    padding: 80px;
+    background-color: #f0f0f0;
+}
+
+.second_div_text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.second_div h2 {
+    color: #303030;
+    font-size: 40px;
+}
+
+.second_div_text button {
+    background-color: #d2401e;
+    padding: 15px 48px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    border: 1px solid transparent;
+    color: white;
+    line-height: 1.4em;
+    letter-spacing: .2em;
+    font-family: Oswald;
+}
+
+.second_div_text button:hover{
+    background-color: #c83b1a; 
+    padding: 15px 48px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    border: 1px solid transparent;
+    color: white;
+    line-height: 1.4em;
+    letter-spacing: .2em;
+    font-family: Oswald;
+}
+
+.card1 img{
+    width: 100%;
+    margin-top: 50px;
+    transition: 1s;
+}
+
+.card1 h2 {
+    color: #303030;
+    font-size: 25px;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.column1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    width: 30%;
+}
+
+.card1 img:hover {
+    width: 100%;
+    margin-top: 50px;
+    transform: translate(15px,-15px);
+    box-shadow: 5px 5px 10px gray;
+}
+
+.animation {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.animation img {
+    margin-right: 20px;
+    width: 200px;
+    position: relative;
+    animation: pizza 0.3s infinite;
+    margin-top: 100px;
+}
+
+@keyframes pizza {
+    0%   {bottom: 0px;}
+    25%  {bottom: 3px;}
+    50%  {bottom: 6px;}
+    75%  {bottom: 3px;}
+    100% {bottom: 0px;}
+}
+
+.pizza_heaven {
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #d2401e;
+    height: 300px;
+    padding-top: 70px;
+    background-image: url(https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/12/landing-banner-img-1a.jpg);
+    background-position: center;
+}
+
+.pizza_heaven img {
+    width: 780px;
+    height: 174px;
+    justify-self: center;
+    align-self: center;
+}
+
+.pizza_heaven h2 {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-family: Oswald;
+    margin-top: -3px;
+}
+
+.images_text {
+    display: flex;
+    background-color: #f0f0f0;
+    height: 580px;
+}
+
+.online_orders_image {
+    width: 50%;
+}
+
+.text_content {
+    width: 50%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-repeat: no-repeat;
+    background-image: url(https://donpeppe.qodeinteractive.com/wp-content/uploads/2020/01/landing-rev-crust-graphic.png);
+}
+
+#img1 {
+    width: 473px;
+    height: 309px;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 100px;
+} 
+
+#img2 {
+    width: 309px;
+    height: 171px;
+    position: absolute;
+    margin-top: 175px;
+    margin-left: 370px;
+}
+
+#img3 {
+    width: 138px;
+    height: 218px;
+    position: absolute;
+    margin-top: 330px;
+    margin-left: 120px;
+}
+
+#img4 {
+    width: 294px;
+    height: 241px;
+    position: absolute;
+    margin-top: 380px;
+    margin-left: 330px;
+}
+
+#img5 {
+    width: 161px;
+    height: 48px;
+    position: absolute;
+    margin-top: 550px;
+    margin-left: 120px;
+}
+
+.text_content h1 {
+    color: rgb(48, 48, 48);
+    font-family: "Oswald";
+    text-align: left;
+    width: 410px;
+    line-height: 55px;
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    margin-left: 100px;
+}
+
+.text_content h2 {
+    line-height: 55px;
+    letter-spacing: 2px;
+    font-family: "Oswald";
+    font-weight: 600;
+    font-size: 12px;
+    color: rgb(210, 64, 30);
+    text-align: left;
+    vertical-align: middle;
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: -40px;
+}
+
+.text_content p {
+    text-align: left;
+    line-height: 24px;
+    font-weight: 400;
+    font-size: 15px;
+    width: 400px;
+    color: rgb(143, 143, 143);
+    vertical-align: middle;
+    margin-left: 100px;
+}
+
+.text_content h3 {
+    font-family: Oswald;
+    font-size: 12px;
+    line-height: 1.4em;
+    letter-spacing: .2em;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 100px;
+    color: #1b1b1b;
+}
+
+#image1 {
+    width: 650px;
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 40px;
+} 
+
+#image2 {
+    width: 300px;
+    position: absolute;
+    margin-top: 210px;
+}
+
+#image3 {
+    width: 230px;
+    position: absolute;
+    margin-top: 420px;
+    margin-left: 240px;
+}
+
+.book_table {
+    width: 60%;
+    float: right;
+}
+
+.parallax button {
+    background-color: #d2401e;
+    padding: 15px 48px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    border: 1px solid transparent;
+    color: white;
+    line-height: 1.4em;
+    letter-spacing: .2em;
+    font-family: Oswald;
+}
+
+.parallax button:hover {
+    background-color: #c83b1a;
+    padding: 15px 48px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    border: 1px solid transparent;
+    color: white;
+    line-height: 1.4em;
+    letter-spacing: .2em;
+    font-family: Oswald;
+}
+
+.parallax {
+    background-image: url(https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/10/landing-parallax-img.jpg);
+    position: relative;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 600px;
+}
+
+.parallax h1 {
+    font-family: Oswald;
+    font-size: 70px;
+    line-height: 75px;
+    font-weight: 600;
+    text-align: left;
+    color: white;
+    width: 450px;
+    vertical-align: middle;
+}
+
+.parallax_content {
+    position: absolute;
+    top: 50px;
+    left: 130px;
+    vertical-align: middle;
+}
+
+#img11 {
+    width: 660px;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 30px;
+} 
+
+#img22 {
+    width: 470px;
+    position: absolute;
+    margin-top: 335px;
+    margin-left: 270px;
+}
+
+#img33 {
+    width: 270px;
+    position: absolute;
+    margin-top: 430px;
+    margin-left: 70px;
+}
+
+.images_text2{
+    display: flex;
+    background-color: #f0f0f0;
+    height: 850px;
+}
+
+.green_div {
+    display: flex;
+    margin-top: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(80, 105, 73);
+    height: 400px;
+    padding-top: 70px;
+    background-image: url(https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/11/landing-text-1.png);
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+
+.green_div h1 {
+    text-align: center;
+    font-size: 38px;
+    color: white;
+    font-family: Oswald;
+    margin-top: -3px;
+}
+
+.green_div p{
+    line-height: 55px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    font-family: Oswald;
+    margin-bottom: -5px;
+}
+
+.green_div h2 {
+    font-family: "Open Sans";
+    visibility: visible;
+    text-align: center;
+    line-height: 28px;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin-top: -5px;
+}
+
+.four_images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: -60px;
+}
+
+.four_images img {
+    width: 20%;
+    box-shadow: 3px 3px 6px gray;
+}
+
+#image11 {
+    width: 550px;
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 80px;
+} 
+
+#image22 {
+    width: 500px;
+    position: absolute;
+    margin-top: 410px;
+    margin-left: 10px;
+}
+
+#image33 {
+    width: 200px;
+    position: absolute;
+    margin-top: 330px;
+    margin-left: 400px;
+}
+
+#image44 {
+    width: 150px;
+    margin-top: 55px;
+    margin-left: 320px;
+}
+.get_your_slice {
+    background-image: url(https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/11/landing-text-2.png);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    height: 380px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;  
+    margin-top: 20px;
+    background-color: rgb(37, 37, 37);
+}
+
+.get_your_slice h1 {
+    font-family: Oswald;
+    font-size: 70px;
+    line-height: 75px;
+    font-weight: 600;
+    text-align: left;
+    color: white;
+    vertical-align: middle;
+    align-self: center;
+    justify-self: center;
+    vertical-align: middle;
+}
+
+.get_your_slice button {
+    background-color: #d2401e;
+    padding: 15px 48px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    border: 1px solid transparent;
+    color: white;
+    line-height: 1.4em;
+    letter-spacing: .2em;
+    font-family: Oswald;
+    width: 250px;
+    align-self: center;
+    justify-self: center;
+    vertical-align: middle;
+}
+
+.get_your_slice button:hover {
+    background-color: #c83b1a;
+    padding: 15px 48px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    border: 1px solid transparent;
+    color: white;
+    line-height: 1.4em;
+    letter-spacing: .2em;
+    font-family: Oswald;
+    width: 250px;
+    align-self: center;
+    justify-self: center;
+    vertical-align: middle;
+}
+
+.get_your_slice img {
+    margin-top: -170px;
+    width: 200px;
+    align-self: center;
+    justify-self: top;
+}
