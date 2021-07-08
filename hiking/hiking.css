@@ -320,7 +320,7 @@ body {
     flex-direction: row;
     justify-content: center;
     letter-spacing: 1px;
-}
+}  
 
 .footer1 {
     display: flex;
@@ -363,4 +363,17 @@ body {
     color: #DEB37E;
     margin: 5px 15px;
     transform: scale(1.2)
+}
+
+
+
+
+
+
+/* style for mobile version */
+
+
+@media screen and (max-width: 500px) {
+    .cards {
+        flex-direction: column; }
 }

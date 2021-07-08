@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+ 
+    <div class="header">
+        <div class="logo">
+            <img src="slika1.jpg" style="width: 50px; height: 50px;"> 
+        </div>
+        <div id="menu_btn" class="menu_btn">
+            <h1>Menu</h1>
+        </div>
+
+        <div class="links">
+            <ul>
+                <li>link1</li>
+                <li>link2</li>
+                <li>link3</li>
+                <li>link4</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="dropdown" class="dropdown">
+        <ul>
+            <li>link1</li>
+            <li>link2</li>
+            <li>link3</li>
+            <li>link4</li>
+        </ul>
+        <h1 id="close">x</h1>
+    </div>
+    <script>
+        document.getElementById("menu_btn").onclick = function() {
+            document.getElementById("dropdown").style.display = "block";
+        }
+        document.getElementById("close").onclick = function() {
+            document.getElementById("dropdown").style.display = "none";
+        }
+    </script>
+</body>
+</html>

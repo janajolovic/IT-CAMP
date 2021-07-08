@@ -1,67 +1,26 @@
-body {
+.cards {
     display: flex;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .cardBody {
-    width: 420px;
-    height: 460px;
-    margin: 14px;
+    width: 30%;
+    height: 300px;
+    background-color: rgb(142, 185, 235);
+    border: black 1px solid;
     border-radius: 10px;
-    border-style: solid;
-    border-color: rgb(221, 220, 220);
-    border-width: 1px}
-
-.image {
-    width: 420px;
-    border-radius: 10px 10px 0px 0px;
 }
 
-.about { 
-    color:rgb(168, 166, 166)
+.cardBody img {
+    width: 100%;
 }
 
-.cardContent {
-    margin: 20px;
+@media screen and (max-width: 480px) {
+    .cards {
+    flex-direction: column; }
+    .cardBody {
+        width: 95%;
+        margin-bottom: 10px;
+    }
 }
-
-.name {
-    margin-left: 5px;
-    margin-top: 5px;
-}
-h2,p {
-    font-family: 'Quicksand';
-    font-style: normal;
-}
-
-.imageCircle {
-    width: 30px;
-    height: 30px;
-    border-radius: 50px;
-    margin: 15px;
-}
-
-.footer{
-    border-top-color: rgb(221, 220, 220);
-    border-top-style: solid;
-    border-top-width: 1px;
-    display: flex;
-    align-items: flex-start;
-}
-
-.box {
-    border-radius: 18px;
-    color: rgb(71, 135, 231);
-    background-color: rgb(164, 229, 245);
-    margin: 15px 5px 5px 70px;
-    height: 30px;
-    width: 120px;
-    text-align: center;
-}
-
-h2 {
-    letter-spacing: 1px;
-    font-weight: 700;
-    color: rgb(71, 71, 71)
-}
-
