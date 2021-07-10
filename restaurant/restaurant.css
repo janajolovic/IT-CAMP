@@ -55,11 +55,12 @@ body {
 }
 
 .second_div_text button:hover{
-    background-color: #c83b1a; 
+    background-color: #a83217; 
     padding: 15px 48px;
     text-align: center;
     font-weight: 500;
     font-size: 12px;
+    transition: 0.5s;
     border: 1px solid transparent;
     color: white;
     line-height: 1.4em;
@@ -297,7 +298,7 @@ body {
 }
 
 .parallax button:hover {
-    background-color: #c83b1a;
+    background-color: #a83217;
     padding: 15px 48px;
     text-align: center;
     font-weight: 500;
@@ -306,6 +307,7 @@ body {
     color: white;
     line-height: 1.4em;
     letter-spacing: .2em;
+    transition: 0.5s;
     font-family: Oswald;
 }
 
@@ -420,7 +422,14 @@ body {
 .four_images img {
     width: 20%;
     box-shadow: 3px 3px 6px gray;
+    transition: 1s;
 }
+
+.four_images img:hover {
+    width: 20%;
+    box-shadow: 3px 3px 6px gray;
+    transform: translate(15px,-15px);
+} 
 
 #image11 {
     width: 550px;
@@ -448,6 +457,7 @@ body {
     margin-top: 55px;
     margin-left: 320px;
 }
+
 .get_your_slice {
     background-image: url(https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/11/landing-text-2.png);
     position: relative;
@@ -495,10 +505,11 @@ body {
 }
 
 .get_your_slice button:hover {
-    background-color: #c83b1a;
+    background-color: #a83217;
     padding: 15px 48px;
     text-align: center;
     font-weight: 500;
+    transition: 0.5s;
     font-size: 12px;
     border: 1px solid transparent;
     color: white;
