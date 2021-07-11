@@ -55,12 +55,13 @@ body {
 }
 
 .second_div_text button:hover{
-    background-color: #a83217; 
+    background-color: #e2411d; 
     padding: 15px 48px;
     text-align: center;
     font-weight: 500;
     font-size: 12px;
     transition: 0.5s;
+    text-decoration: underline;
     border: 1px solid transparent;
     color: white;
     line-height: 1.4em;
@@ -295,19 +296,20 @@ body {
     line-height: 1.4em;
     letter-spacing: .2em;
     font-family: Oswald;
+    transition: 0.5s;
 }
 
 .parallax button:hover {
-    background-color: #a83217;
+    background-color: #e2411d;
     padding: 15px 48px;
     text-align: center;
     font-weight: 500;
     font-size: 12px;
+    text-decoration: underline;
     border: 1px solid transparent;
     color: white;
     line-height: 1.4em;
     letter-spacing: .2em;
-    transition: 0.5s;
     font-family: Oswald;
 }
 
@@ -488,7 +490,7 @@ body {
 }
 
 .get_your_slice button {
-    background-color: #d2401e;
+    background-color: #e2411d;
     padding: 15px 48px;
     text-align: center;
     font-weight: 500;
@@ -505,7 +507,7 @@ body {
 }
 
 .get_your_slice button:hover {
-    background-color: #a83217;
+    background-color: bb3619;
     padding: 15px 48px;
     text-align: center;
     font-weight: 500;
@@ -517,6 +519,7 @@ body {
     letter-spacing: .2em;
     font-family: Oswald;
     width: 250px;
+    text-decoration: underline;
     align-self: center;
     justify-self: center;
     vertical-align: middle;
