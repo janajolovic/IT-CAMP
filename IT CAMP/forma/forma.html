@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="forma.css">
+</head>
+<body>
+    <form id="form" class="form">
+        <input 
+        id="username" 
+        type="text" 
+        placeholder="username"
+        onchange="changeUsername()"
+        required
+        >
+        <input 
+        id="password "
+        value=""
+        type="password" 
+        placeholder="password"
+        onchange="changePassword()"
+        required
+        >
+        <select name="mySelect" onchange="changeSelect()"  id="select">
+            <option value="111">11111</option>
+            <option value="222">22222</option>
+            <option value="333  ">33333</option>
+        </select>
+        <input
+        id="range"
+        type="range"
+        onchange="changeRange()"
+        >
+        <input 
+        id="datetime"
+        type="datetime-local"
+        onchange="changeDatetime()"
+        >
+        <input 
+        id="submit"
+        type="submit"
+        value="Submit"
+        >
+    </form>
+
+    <div class="values">
+        <h2 id="usernameVal"></h2>
+        <h2 id="passwordVal"></h2>
+        <h2 id="selectVal"></h2>
+        <h2 id="rangeVal"></h2>
+        <h2 id="datetimeVal"></h2>
+    </div>
+
+
+    <script>
+    function changeUsername() {
+        document.getElementById("usernameVal").innerHTML = document.getElementById("username").value;
+    }
+    function changePassword() {
+        document.getElementById("passwordVal").innerHTML = document.getElementById("password").value;
+    }
+    function changeSelect() {
+        document.getElementById("selectVal").innerHTML = document.getElementById("select").value;
+    }
+    function changeRange() {
+        document.getElementById("rangeVal").innerHTML = document.getElementById("range").value;
+    }
+    function changeDatetime() {
+        document.getElementById("datetimeVal").innerHTML = document.getElementById("datetime").value;
+    }
+    </script>
+
+</body>
+</html>
