@@ -60,24 +60,25 @@ body {
     justify-content: center;
 
 }
-#glupave_linije {
+#lines {
     width: 471px;
     height: 198px;
     position: absolute;
-    top: 5px;
-    left: 15px;
+    top: 0px;
+    left: 25px;
 }
+
 #title1 {
     height: 110px;
     width: 288px;
     position: absolute;
-    top: 100px;
-    left: 100px;
+    top: 80px;
+    left: 110px;
 }
 
 #title2 {
     position: absolute;
-    top: 220px;
+    top: 200px;
     left: 100px;
     width: 297px;
     height: 61px;
@@ -85,8 +86,8 @@ body {
 
 #title3 {
     position: absolute;
-    top: 290px;
-    left: 100px;
+    top: 270px;
+    left: 110px;
     width: 289px;
     height: 67px;
 }
@@ -99,8 +100,8 @@ body {
     color: #FFF;
     border-radius: 5px;
     position: absolute;
-    top: 500px;
-    left: 100px;
+    top: 480px;
+    left: 110px;
     font-size: 15px;
     font-family: Quicksand,sans-serif;
     line-height: 2em;
@@ -115,8 +116,8 @@ body {
     border: 1px solid pink;
     color: pink;
     position: absolute;
-    top: 500px;
-    left: 100px;
+    top: 480px;
+    left: 110px;
     border-radius: 5px;
     font-size: 15px;
     font-family: Quicksand,sans-serif;
@@ -132,6 +133,6 @@ body {
     font-weight: 400;
     font-family: "Dawning of a New Day";
     position: absolute;
-    top: 370px;
-    left: 100px;
+    top: 350px;
+    left: 110px;
 }
