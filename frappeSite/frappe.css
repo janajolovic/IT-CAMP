@@ -171,3 +171,53 @@ html {
     text-align: center;
     margin-top: -20px;
 }
+
+.cards {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card_img {
+    background-image: url(https://frappe.qodeinteractive.com/wp-content/uploads/2018/04/product-img-1-600x680.jpg);
+    background-repeat: no-repeat;
+    height: 284px;
+    width: 255px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_img button {
+    visibility: hidden;
+    width: 150px;
+    height: 50px;
+    padding: 0px 12px;
+    background-color: pink;
+    border: 1px solid pink;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: Quicksand,sans-serif;
+    line-height: 2em;
+    letter-spacing: .05em;
+    font-weight: 500;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.card_img:hover button {
+    visibility: visible;
+}
+
+.card_img:hover button:hover {
+    visibility: visible;
+    background-color: white;
+    border: 1px solid white;
+    color: #5a5a5a;
+
+}
