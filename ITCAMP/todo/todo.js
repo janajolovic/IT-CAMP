@@ -2,7 +2,7 @@ const a=["wake up", "teach", "code"];
 
 const list = document.querySelector(".lista");
 const form = document.querySelector(".form");
-const todo = document.querySelector(".todo")
+const todo = document.querySelector(".todo");
 
 
 function showList() {
@@ -24,6 +24,8 @@ form.onsubmit = function(e) {
     showList();
     
 }
+
+
 
 
 

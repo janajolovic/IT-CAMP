@@ -81,6 +81,11 @@ body {
     margin-right: 2px;
     position: absolute;
     right: 30px;
+    visibility: hidden;
+}
+
+.list_item:hover #done, .list_item:hover #delete{
+    visibility: visible;
 }
 
 #delete {
@@ -91,5 +96,6 @@ body {
     padding: 3px;
     position: absolute;
     right: 5px;
+    visibility: hidden;
 }
 
