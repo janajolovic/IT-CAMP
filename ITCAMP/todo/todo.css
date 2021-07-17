@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #4066d8;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    margin-top: 75px;
+}
+
+.todo {
+    height: 450px;
+    width: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+    align-content: center;
+}
+
+.todo h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#input_add {
+    width: 85%;
+    height: 25px;
+    border: 1px solid #c5c3c3;
+    border-radius: 3px;
+}
+.form {
+    display: flex;
+    flex-direction: row;
+}
+
+.form button {
+    height: 28px;
+    width: 28px;
+    color: white;
+    font-size: 30px;
+    background-color: blueviolet;
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    font-size: 20px;
+}
+
+.list_item {
+    background-color: #e6e6e6;
+    list-style: none;
+    width: 98%;
+    margin: 3px 0px;
+    padding: 3px 0px 3px 5px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+
+
+#done {
+    background-color: rgb(64, 248, 47);
+    color: white;
+    font-size: 16px;
+    padding: 3px;
+    width: 15px;
+    margin-right: 2px;
+    position: absolute;
+    right: 30px;
+}
+
+#delete {
+    background-color: rgb(219, 40, 40);
+    width: 15px;
+    color: white;
+    font-size: 16px;
+    padding: 3px;
+    position: absolute;
+    right: 5px;
+}
+
