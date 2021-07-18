@@ -181,7 +181,6 @@ html {
 }
 
 .card_img {
-    background-image: url(https://frappe.qodeinteractive.com/wp-content/uploads/2018/04/product-img-1-600x680.jpg);
     background-repeat: no-repeat;
     height: 284px;
     width: 255px;
@@ -190,6 +189,38 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.img1 {
+    background-image: url(https://frappe.qodeinteractive.com/wp-content/uploads/2018/04/product-img-1-600x680.jpg);
+}
+
+.img2 {
+    background-image: url(https://frappe.qodeinteractive.com/wp-content/uploads/2018/04/product-img-2-600x680.jpg);
+}
+
+.img3 {
+    background-image: url(	https://frappe.qodeinteractive.com/wp-content/uploads/2018/04/product-img-3-600x680.jpg);
+}
+
+.img4 {
+    background-image: url(https://frappe.qodeinteractive.com/wp-content/uploads/2018/04/product-img-4-600x680.jpg);
+}
+
+.img5 {
+    background-image: url(https://frappe.qodeinteractive.com/wp-content/uploads/2018/04/product-img-5-600x680.jpg);
+}
+
+.img6 {
+    background-image: url(https://frappe.qodeinteractive.com/wp-content/uploads/2018/04/product-img-6-600x680.jpg);
+}
+
+.img7 {
+    background-image: url(https://frappe.qodeinteractive.com/wp-content/uploads/2018/04/product-img-7-600x680.jpg);
+}
+
+.img8 {
+    background-image: url(https://frappe.qodeinteractive.com/wp-content/uploads/2018/04/product-img-8-600x680.jpg);
 }
 
 .card_img button {
@@ -221,3 +252,18 @@ html {
     color: #5a5a5a;
 
 }
+
+.card_text h2 {
+    font-family: Quicksand;
+    font-size: 20px;
+    color: #5a5a5a;
+    text-align: center;
+}
+
+.card_text p {
+    font-family: Quicksand;
+    font-size: 16px;
+    color: #a4a4a4;
+    text-align: center;
+}
+
