@@ -298,8 +298,20 @@ html {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    margin-left: -50px;
 }
 
 .form {
-    margin-left: 400px;
+    margin-left: 500px;
+}
+
+#email {
+    background-color: transparent;
+    color: white;
+    border: 2px dotted white;
+    height: 50px;
+    width: 300px;
+    border-radius: 5px;
+    padding-left: 14px;
+    font-size: 14px;
 }
