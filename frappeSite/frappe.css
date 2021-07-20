@@ -267,3 +267,39 @@ html {
     text-align: center;
 }
 
+
+.get_our_recipe h1 {
+    font-size: 50px;
+    line-height: 1.1em;
+    font-family: Quicksand;
+    color: white;
+    font-weight: 600;
+    margin-left: 600px;
+}
+
+.get_our_recipe p {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 400;
+    font-family: "Dawning of a New Day";
+    color: white;
+    margin-top: -20px;
+    margin-left: 400px;
+}
+
+.get_our_recipe {
+    background-color: #fbbcc0;
+    background-image: url(https://frappe.qodeinteractive.com/wp-content/uploads/2018/05/h1-img-2b.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 580px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form {
+    margin-left: 400px;
+}
