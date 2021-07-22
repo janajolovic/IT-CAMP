@@ -302,7 +302,7 @@ html {
 }
 
 .form {
-    margin-left: 500px;
+    margin-left: 630px;
 }
 
 #email {
@@ -314,4 +314,24 @@ html {
     border-radius: 5px;
     padding-left: 14px;
     font-size: 14px;
+}
+
+#email::placeholder {
+    color: white;
+}
+
+#subscribe {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    height: 55px;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+#subscribe:hover {
+    background-color: white;
+    color: #5a5a5a;
 }
