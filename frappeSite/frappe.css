@@ -335,3 +335,47 @@ html {
     background-color: white;
     color: #5a5a5a;
 }
+
+.they_say {
+    padding: 50px 260px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(	https://frappe.qodeinteractive.com/wp-content/uploads/2018/04/h1-img-5.png?id=185);
+}
+
+.they_say h1 {
+    font-size: 40px;
+    line-height: 1.1em;
+    font-family: Quicksand;
+    color: #5a5a5a;
+    font-weight: 600;
+    text-align: center;
+}
+
+.they_say h2 {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 400;
+    font-family: "Dawning of a New Day";
+    color: #a4a4a4;
+    text-align: center;
+}
+
+.they_say h3 {
+    font-size: 20px;
+    line-height: 1.1em;
+    font-family: Quicksand;
+    color: #5a5a5a;
+    font-weight: 600;
+    text-align: center;
+}
+
+.they_say p {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+    font-family: Quickdsand;
+    color: #a4a4a4;
+    margin-top: -20px;
+    text-align: center;
+}
