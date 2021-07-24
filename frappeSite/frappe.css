@@ -379,3 +379,15 @@ html {
     margin-top: -20px;
     text-align: center;
 }
+
+.raw_menu {
+    background-color: rgb(171, 233, 176);
+    display: flex;
+    height: 900px;
+    justify-content: center;
+}
+
+.raw_menu_img {
+    height: 180px;
+    margin-top: 100px;
+}
