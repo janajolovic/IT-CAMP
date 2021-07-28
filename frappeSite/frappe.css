@@ -538,3 +538,27 @@ html {
     height: 40px;
     transform: rotate(250deg);
 }
+
+.fruitsome_blog {
+    position: relative;
+    margin-top: 100px;
+}
+
+.heart_img {
+    position: absolute;
+    left: 420px;
+    margin-top: -40px;
+}
+
+.fruitsome_cards {
+    display: flex;
+    justify-content: center;
+}
+
+.fr_card {
+    margin: 0px 20px;
+}
+
+.fruitsome_cards img {
+    width: 350px;
+}
