@@ -557,8 +557,34 @@ html {
 
 .fr_card {
     margin: 0px 20px;
+    width: 350px;
 }
 
 .fruitsome_cards img {
     width: 350px;
+}
+
+.fr_card h1 {
+    font-family: Quicksand;
+    font-size: 26px;
+    color: #5a5a5a;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+.fr_card h1:hover {
+    color: #a4a4a4;
+}
+
+.fr_card h2 {
+    font-family: Quicksand;
+    font-size: 15px;
+    color: #a4a4a4;
+    line-height: 25px;
+}
+
+.fr_card p {
+    font-family: Quicksand;
+    font-size: 12px;
+    color: #a4a4a4;
 }
