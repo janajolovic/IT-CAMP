@@ -28,7 +28,7 @@ html {
 
 }
 
-.header p, ul li {
+.header p, .header ul li {
     list-style: none;
     margin: 0 22px;
     color: #5a5a5a;
@@ -47,6 +47,17 @@ html {
     font-family: Quicksand,sans-serif;
     line-height: 23px;
     width: 100%;
+}
+
+.cart_items {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.cart_items i {
+    color: #fbbcc0;
+    font-size: 20px;
 }
 
 .main_home_img {
@@ -368,12 +379,13 @@ html {
     color: #5a5a5a;
     font-weight: 600;
     text-align: center;
+    letter-spacing: 1px;
 }
 
 .they_say p {
     font-size: 18px;
     line-height: 32px;
-    font-weight: 400;
+    font-weight: 100;
     font-family: Quickdsand;
     color: #a4a4a4;
     margin-top: -20px;
@@ -587,12 +599,13 @@ html {
     font-family: Quicksand;
     font-size: 12px;
     color: #a4a4a4;
+    font-weight: 400;
 }
 
 .footer {
     background-color: #050505;
     display: flex;
-    margin: 0pc -35px;
+    margin: 50px -35px 0px -35px;
     justify-content: space-around;
     flex-direction: row;
     height: 550px;
@@ -607,7 +620,7 @@ html {
     margin-bottom: 30px;
 }
 
-ul li {
+.footer ul li {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -620,14 +633,14 @@ ul li {
     font-family: Quicksand;
 }
 
-li i {
+.column1 li i {
     color: #b4b4b4;
+    margin-left: 110px;
     margin-right: 10px;
-    margin-left: 50px;
 }
 
 .column1 img {
-    margin-left: 100px;
+    margin-left: 140px;
 }
 
 .column1, .column2, .column3 {
@@ -636,9 +649,9 @@ li i {
 
 .column2 li {
     font-size: 14px;
-    letter-spacing: 2px;
+    letter-spacing: 0.5px;
     line-height: 40px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .images img {
@@ -647,4 +660,23 @@ li i {
 
 .column3 {
     margin-top: -50px;
+}
+
+.footer p:hover, .footer li:hover, 
+.footer i:hover, .footer_rights i:hover {
+    color: #abe9b0;
+}
+
+.footer_rights {
+    background-color: #050505;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #a4a4a4;
+    color: #a4a4a4;
+    font-family: Quicksand;
+    margin: 0px -35px;
+    font-weight: 400;
+    font-size: 12px;
+    height: 90px;
+    align-items: center;
 }
