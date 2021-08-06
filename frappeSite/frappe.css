@@ -588,3 +588,63 @@ html {
     font-size: 12px;
     color: #a4a4a4;
 }
+
+.footer {
+    background-color: #050505;
+    display: flex;
+    margin: 0pc -35px;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 550px;
+    align-items: center;
+}
+
+.footer h2 {
+    color: white;
+    font-size: 18px;
+    font-family: Quicksand;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+}
+
+.footer p {
+    color: #b4b4b4;
+    font-size: 12px;
+    font-family: Quicksand;
+}
+
+li i {
+    color: #b4b4b4;
+    margin-right: 10px;
+    margin-left: 50px;
+}
+
+.column1 img {
+    margin-left: 100px;
+}
+
+.column1, .column2, .column3 {
+    width: 35%;
+}
+
+.column2 li {
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 40px;
+    font-weight: 500;
+}
+
+.images img {
+    width: 120px;
+}
+
+.column3 {
+    margin-top: -50px;
+}
