@@ -36,6 +36,7 @@ html {
     font-weight: 600;
     font-family: Quicksand,sans-serif;
     line-height: 23px;
+    transition: 0.5s;
 }
 
 .header li:hover {
@@ -121,6 +122,7 @@ html {
     line-height: 2em;
     letter-spacing: .05em;
     font-weight: 500;
+    transition: 0.5s;
 }
 
 .main_home_img button:hover {
@@ -200,6 +202,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 8px;
 }
 
 .img1 {
@@ -250,6 +253,7 @@ html {
     font-weight: 500;
     vertical-align: middle;
     text-align: center;
+    transition: 0.5s;
 }
 
 .card_img:hover button {
@@ -582,6 +586,7 @@ html {
     color: #5a5a5a;
     font-weight: bold;
     margin: 20px 0px;
+    transition: 0.5s;
 }
 
 .fr_card h1:hover {
@@ -685,4 +690,5 @@ html {
     font-size: 18px;
     margin: 0px 30px;
     color: #5a5a5a;
+    transition: 0.5s;
 }
