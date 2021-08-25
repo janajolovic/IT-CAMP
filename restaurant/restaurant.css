@@ -114,16 +114,15 @@ body {
     margin-top: 100px;
 }
 
-@keyframes pizza {
+/* @keyframes pizza {
     0%   {bottom: 0px;}
     25%  {bottom: 3px;}
     50%  {bottom: 6px;}
     75%  {bottom: 3px;}
     100% {bottom: 0px;}
-}
+} */
 
 .pizza_heaven {
-    margin-top: -100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -148,6 +147,11 @@ body {
     color: white;
     font-family: Oswald;
     margin-top: -3px;
+}
+
+
+.text_content h3:hover {
+    text-decoration: underline;
 }
 
 .images_text {
