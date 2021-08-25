@@ -76,12 +76,6 @@ color: #818181;
 display: block;
 }
 
-
-
-
-
-
-
 .header p {
     list-style: none;
     margin: 0 22px;
@@ -311,11 +305,21 @@ display: block;
 
 }
 
-.card_text h2 {
+.card_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card_text a{
     font-family: Quicksand;
     font-size: 20px;
     color: #5a5a5a;
     text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 20px;
 }
 
 .card_text p {
@@ -734,4 +738,133 @@ display: block;
     margin: 0px 30px;
     color: #5a5a5a;
     transition: 0.5s;
+}
+
+
+
+
+
+
+/* smoothies & juices pages */
+
+.SmoothiesJuices_page {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0px;
+}
+
+.SmoothiesJuices_page_image img {
+    width: 70%;
+    margin-left: 100px;
+}
+
+.SmoothiesJuices_page_text {
+    width: 40%;
+    float: right;
+}
+
+.SmoothiesJuices_page_text h1{
+    font-size: 34px;
+    font-family: Quicksand;
+    color: #5a5a5a;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+
+.SmoothiesJuices_page_text p {
+    font-size: 16px;
+    font-family: Quicksand;
+    color: #818181;
+}
+
+
+.SmoothiesJuices_page_text h2 {
+    font-size: 16px;
+    font-family: Quicksand;
+    color: #5a5a5a;
+    line-height: 14px;
+}
+
+.SmoothiesJuices_page_text span {
+    font-size: 16px;
+    font-family: Quicksand;
+    color: #a4a4a4;
+    font-weight: 400;
+}
+
+.counter {
+    display: flex;
+    flex-direction: row;
+    border: #c3c3c3 solid 1px;
+    border-radius: 5px;
+    width: 90px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.number {
+    width: 60px;
+    border-right: #c3c3c3 solid 1px;
+    height: 60px;
+}
+
+.number h2 {
+    text-align: center;
+    font-size: 20px;
+    line-height: normal;
+}
+
+.plus_minus {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.plus_minus span {
+    font-size: 18px;
+    color: #5a5a5a;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 3px;
+} 
+
+.plus_minus span:hover {
+    color: #abe9b0;
+}
+
+.plus {
+    border-bottom: #c3c3c3 solid 1px;
+    width: 100%;
+}
+
+.buttons button {
+    height: 60px;
+    width: 150px;
+    color: white;
+    background-color: #abe9b0;
+    border: none;
+    padding-bottom: 12px 18px;
+    margin-left: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Quicksand;
+}
+
+
+.buttons button:hover {
+    background-color: pink;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-content: center;
+    margin: 30px 0px;
 }
