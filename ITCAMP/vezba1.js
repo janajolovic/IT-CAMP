@@ -576,24 +576,106 @@
 
 
 
-function number(n) {
-    novi_niz = [];
-    for (i=0; i<n.length; i++) {
-        if (n[i] % 2 === 1) {
-            novi_niz.push(n[i]);
-        }
-    }
-    novi_niz.sort(function(a,b) {return a-b});
-    for (i=0; i<n.length; i++) {
-        if (n[i] % 2 === 0) {
-            index = n.indexOf(n[i]);
-            novi_niz.splice(index,0,n[i]);
-        }
-    }
+// function number(n) {
+//     novi_niz = [];
+//     for (i=0; i<n.length; i++) {
+//         if (n[i] % 2 === 1) {
+//             novi_niz.push(n[i]);
+//         }
+//     }
+//     novi_niz.sort(function(a,b) {return a-b});
+//     for (i=0; i<n.length; i++) {
+//         if (n[i] % 2 === 0) {
+//             index = n.indexOf(n[i]);
+//             novi_niz.splice(index,0,n[i]);
+//         }
+//     }
 
-    return novi_niz;
+//     return novi_niz;
+// }
+
+
+// niz = [9,8,7,6,5,4,3,2,1,0];
+// console.log(number(niz));
+
+
+
+
+
+// function likes(names) {
+//     len = names.length;
+//     switch (true) {
+//         case len===0:
+//             return "no one likes this";
+//         case len===1:
+//             return `${names[0]} likes this`;
+//         case len===2:
+//             return `${names[0]} and ${names[1]} like this`;
+//         case len===3:
+//             return `${names[0]}, ${names[1]} and ${names[2]} like this`;
+//         case len>=4:
+//             return `${names[0]}, ${names[1]} and ${len-2} others like this`;
+//         default:
+//             break;
+
+//     }
+// }
+
+
+// console.log(likes([]))
+// console.log(likes(["peter"]))
+// console.log(likes(["peter", "jacob"]))
+// console.log(likes(["peter", "jacob", "alex"]))
+// console.log(likes(["peter", "jacob", "alex", "max"]))
+
+
+
+
+
+
+
+// function expandedForm(num) {
+//     num = num.toString(); 
+//     resenje = "";
+//     for (i=0; i<num.length; i++) {
+//         if (num[i] !=="0") {
+//             resenje += num[i];
+//             for (j=i; j<num.length-1; j++) {
+//                 resenje += "0"
+//             }
+//         resenje += " + "
+//         }
+//     }
+//     return resenje.slice(0, resenje.length - 3);
+// }
+
+
+// console.log(expandedForm(10254));
+// console.log(expandedForm(42));
+// console.log(expandedForm(70304));
+
+
+
+
+
+function countSmileys(arr) {
+    count = 0;
+    for (i=0; i<arr.length; i++) {
+        if (arr[i].length === 2) {
+            if ((arr[i][0].includes(":") || arr[i][0].includes(";")) && 
+                (arr[i][1].includes(")") || arr[i][1].includes("D")))  {
+                count+=1;
+            }
+        }
+        if (arr[i].length === 3) {
+            if (    (arr[i][0].includes(":") || arr[i][0].includes(";")) && 
+                    (arr[i][2].includes(")") || arr[i][2].includes("D")) && 
+                    (arr[i][1].includes("~") || arr[i][1].includes("-")))  {
+                count+=1;
+            }
+        }
+    }
+    return count;
 }
 
-
-niz = [9,8,7,6,5,4,3,2,1,0];
-console.log(number(niz));
+console.log(countSmileys([":D", ";-)", ":("]));
