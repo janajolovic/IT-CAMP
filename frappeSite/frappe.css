@@ -100,7 +100,7 @@ display: block;
 
 .main_home_img {
     background-repeat: no-repeat;
-    background-image: url(	https://frappe.qodeinteractive.com/wp-content/uploads/2018/04/h1-rev-background-img-1.jpg);
+    background-image: url(https://frappe.qodeinteractive.com/wp-content/uploads/2018/04/h1-rev-background-img-1.jpg);
     background-size: cover;
     background-position: center center;
     height: 580px;
@@ -322,6 +322,10 @@ display: block;
     margin-top: 20px;
 }
 
+.card_text a:hover {
+    color: #818181;
+}
+
 .card_text p {
     font-family: Quicksand;
     font-size: 16px;
@@ -405,7 +409,7 @@ display: block;
     background-image: url(	https://frappe.qodeinteractive.com/wp-content/uploads/2018/04/h1-img-5.png?id=185);
 }
 
-.they_say h1 {
+.they_say h1{
     font-size: 40px;
     line-height: 1.1em;
     font-family: Quicksand;
@@ -627,7 +631,7 @@ display: block;
     width: 350px;
 }
 
-.fr_card h1 {
+.fr_card h1, .aboutus_first_part h1 {
     font-family: Quicksand;
     font-size: 26px;
     color: #5a5a5a;
@@ -772,7 +776,7 @@ display: block;
 }
 
 
-.SmoothiesJuices_page_text p {
+.SmoothiesJuices_page_text p , .aboutus_first_part p{
     font-size: 16px;
     font-family: Quicksand;
     color: #818181;
@@ -867,4 +871,71 @@ display: block;
     justify-content: left;
     align-content: center;
     margin: 30px 0px;
+}
+
+
+
+.aboutus_first_part {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px 0px;
+}
+
+.aboutus_first_part img {
+    width: 35%;
+    margin: 0px 20px;
+}
+
+.aboutus_column_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 25%;
+}
+
+.aboutus_column_rigth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 25%;
+}
+
+.aboutus_column_left p {
+    text-align: right;
+    margin-bottom: 35px;
+    margin-top: -5px;
+}
+
+.aboutus_column_rigth p {
+    margin-bottom: 35px;
+    margin-top: -5px;
+}
+
+.pink_smoothie {
+    background-color: rgb(241, 178, 188);
+    color: white;
+    font-family: Quicksand;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px -35px 10px -35px;
+    height: 320px;
+}
+
+.pink_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pink_column img {
+    width: 90px;
+}
+
+.pink_column p {
+    margin-top: -10px;
 }
