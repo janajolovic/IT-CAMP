@@ -952,3 +952,61 @@ display: block;
     width: 230px;
     height: 90px;
 }
+
+.aboutus_basic_plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.basic_plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #abe9b0;
+    color: white;
+    width: 350px;
+    height: 480px;
+    font-family: Quicksand;
+    border-radius: 5px;
+    margin: 0px 15px;
+}
+
+.basic_plan p {
+    font-size: 16px;
+    width: 240px;
+    line-height: 35px;
+    text-align: center;
+}
+
+
+.basic_plan button {
+    width: 150px;
+    height: 60px;
+    padding: 5px 14px;
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 2em;
+    letter-spacing: .05em;
+    font-weight: 500;
+    vertical-align: middle;
+    text-align: center;
+    transition: 0.5s;
+    background-color: white;
+    border: 1px solid white;
+    color: #a4a4a4;
+}
+
+.basic_plan button:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.basic_plan h1 {
+    font-size: 50px;
+    margin-bottom: -20px;
+    margin-top: 0px;
+}
