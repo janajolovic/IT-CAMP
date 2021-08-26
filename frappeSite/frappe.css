@@ -914,7 +914,7 @@ display: block;
     margin-top: -5px;
 }
 
-.pink_smoothie {
+.pink_smoothie, .green_logos {
     background-color: rgb(241, 178, 188);
     color: white;
     font-family: Quicksand;
@@ -932,10 +932,23 @@ display: block;
     align-items: center;
 }
 
-.pink_column img {
+.pink_column img{
     width: 90px;
 }
 
 .pink_column p {
     margin-top: -10px;
+}
+
+.green_logos {
+    background-color: #abe9b0;
+    align-items: center;
+    height: 250px;
+    margin-top: 5px;
+    margin-bottom: -20px;
+}
+
+.green_logos img {
+    width: 230px;
+    height: 90px;
 }
