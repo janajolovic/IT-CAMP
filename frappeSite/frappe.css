@@ -1010,3 +1010,25 @@ display: block;
     margin-bottom: -20px;
     margin-top: 0px;
 }
+
+.whatwedo img {
+    width: 80px;
+}
+
+.whatwedo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.whatwedo h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    width: 300px;
+}
+
+.whatwedo h1:hover {
+    color: #abe9b0;
+}
