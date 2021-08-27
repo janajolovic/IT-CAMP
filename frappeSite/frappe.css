@@ -1032,3 +1032,19 @@ display: block;
 .whatwedo h1:hover {
     color: #abe9b0;
 }
+
+.whatwedo_rawmenu {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    margin: 50px -35px 0px -35px;
+    height: 850px;
+    justify-content: center;
+    background-position: center;
+    background-image: url(	https://frappe.qodeinteractive.com/wp-content/uploads/2018/05/frappe-our-menu-bckgrnd.jpg?id=1808);
+}
+
+.rawmenuimg {
+    width: 230px;
+    margin: 0px 0px 10px 50px;
+}
