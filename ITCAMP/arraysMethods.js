@@ -48,3 +48,6 @@ arr1 = arr.some(el => {
 })
 
 console.log(arr1)
+
+
+
