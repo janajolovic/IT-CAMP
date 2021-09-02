@@ -97,14 +97,112 @@
 
 
 
-array1 = [1,0,2,3,4]
-array2 = [3,5,6,7,8,13]
+// array1 = [1,0,2,3,4]
+// array2 = [3,5,6,7,8,13]
 
-array = array2.map(function(el, indx, arr) {
-    if (this[indx]) {
-        return el + this[indx];
-    } else return el;
-}, array1);
+// array = array2.map(function(el, indx, arr) {
+//     if (this[indx]) {
+//         return el + this[indx];
+//     } else return el;
+// }, array1);
 
 
-console.log(array)
+// console.log(array)
+
+
+
+
+
+
+
+// // Beginner Series #3 Sum of Numbers
+
+// function getSum(a,b) {
+//     sum = 0;
+//     if (a==b) {
+//         return a;
+//     } else {
+//         if (a < b) {
+//             for (let i = a; i <= b; i++) {
+//                 sum += i;
+//             }
+//         } else {
+//             for (let i = b; i <= a; i++) {
+//                 sum += i;
+//             }
+            
+//         }
+//     }
+//     return sum;
+// }
+
+// console.log(getSum(1,2))
+
+
+
+
+
+// function digital_root(n) {
+//     n = n.toString()
+//     sum = 0;
+//     if (n.length === 1) { 
+//         return n;
+//     } else {
+//         while (true) { 
+//         }
+//     }
+//     return sum
+// }
+
+// console.log(digital_root(16))
+
+
+
+
+
+// array = ["ryu", "ken", "chun-li", "cammy", "guile", "sakura"]
+
+
+// array.pop()
+// array.splice(array.length-1, 0, "sagat", "juri")
+
+// array = array.map((el,i) => el + ` ${i}`);
+
+// myString = array.join(" - ")
+
+
+// console.log(myString)
+
+
+
+
+
+// HUMAN READABLE TIME
+
+
+function humanReadable(seconds) {
+    ss = 0;
+    mm = 0;
+    hh = 0;
+    hh = Math.floor(seconds / 3600);
+    mm = Math.floor((seconds - hh * 3600) / 60);
+    ss = Math.floor(seconds - hh * 3600 - mm * 60);
+    if (ss < 10) {
+        ss = "0" + ss;
+    }
+    if (mm < 10) {
+        mm = "0" + mm;
+    }
+    if (hh < 10) {
+        hh = "0" + hh;
+    }
+    return `${hh}:${mm}:${ss}`
+}
+
+
+console.log(humanReadable(84599))
+
+
+
+
+
