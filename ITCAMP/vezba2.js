@@ -180,27 +180,53 @@
 // HUMAN READABLE TIME
 
 
-function humanReadable(seconds) {
-    ss = 0;
-    mm = 0;
-    hh = 0;
-    hh = Math.floor(seconds / 3600);
-    mm = Math.floor((seconds - hh * 3600) / 60);
-    ss = Math.floor(seconds - hh * 3600 - mm * 60);
-    if (ss < 10) {
-        ss = "0" + ss;
+// function humanReadable(seconds) {
+//     ss = 0;
+//     mm = 0;
+//     hh = 0;
+//     hh = Math.floor(seconds / 3600);
+//     mm = Math.floor((seconds - hh * 3600) / 60);
+//     ss = Math.floor(seconds - hh * 3600 - mm * 60);
+//     if (ss < 10) {
+//         ss = "0" + ss;
+//     }
+//     if (mm < 10) {
+//         mm = "0" + mm;
+//     }
+//     if (hh < 10) {
+//         hh = "0" + hh;
+//     }
+//     return `${hh}:${mm}:${ss}`
+// }
+
+
+// console.log(humanReadable(84599))
+
+
+
+
+// Strange Strings Parser!
+
+function wordSplitter(string){
+    for (i=0; i<string.length; i++) {
+        if (((string[i].charCodeAt() >= 32 && string[i].charCodeAt() <= 47) || 
+            (string[i].charCodeAt() >= 58 && string[i].charCodeAt() <= 63) || 
+            (string[i].charCodeAt() >= 91 && string[i].charCodeAt() <= 96) ||
+            (string[i].charCodeAt() >= 123 && string[i].charCodeAt() <= 126)) && (string[i] !== ".") && (string[i] !== "-")) {
+            string = string.replace(string[i], " ")
+        }
     }
-    if (mm < 10) {
-        mm = "0" + mm;
+    string = string.split(" ")
+    for (i=0; i<string.length; i++) {
+        if (string[i] === "") {
+            string.splice(i,1)
+        }
     }
-    if (hh < 10) {
-        hh = "0" + hh;
-    }
-    return `${hh}:${mm}:${ss}`
+    return string;
 }
 
-git 
-console.log(humanReadable(84599))
 
 
+str = "32.0500;-6C:PITCH=-72#ROLL!21.3*REGISTER:90.345689&ARMED?-25";
 
+console.log(wordSplitter(str))
