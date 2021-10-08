@@ -1,220 +1,111 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    min-height: 100vh;
-    background-image: linear-gradient(120deg, #06a6f0, #0c1755);
-    font-family: Quicksand;
-    color: white;
-}
-
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 100px;
-}
-
-.header h2{
-    font-size: 36px;
-}
-
-input {
-    margin: 30px 0px 30px 0px;
-    border: none;
-    border-radius: 0;
-    width: 500px;
-    padding: 10px;
-    float: left;
-    font-size: 16px;
-}
-
-.addBtn {
-    margin: 30px 0px 30px 0px;
-    padding: 10px;
-    width: 50px;
-    background: #0c1755;
-    color: white;
-    float: left;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.addBtn:hover {
-    background: #06a6f0;
-}
-
-.form {
-    display: flex;
-    flex-direction: row;
-}
-
-ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color:#0c1755;
-    list-style: none;
-    font-weight: 500;
-}
-
-ul li {
-    cursor: pointer;
-    position: relative;
-    width: 300px;
-    background: #eee;
-    font-size: 20px;
-    transition: 0.2s;
-    width: 550px;
-    padding: 5px 5px;
-}
-
-ul li:hover {
-    background: #ddd;
-}
-
-
-
-.close {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 12px 16px 12px 16px;
-  }
-  
-  .close:hover {
-    background-color: #f44336;
-    color: white;
-  } */
-
-
-
-
-
 * {
-box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    background-image: linear-gradient(120deg, #06a6f0, #0c1755);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-family: Quicksand;
-    min-height: 100vh;
+	background: linear-gradient(120deg,	#22dbf3,#030f4e);
+	color: white;
+	font-family: "Poppins", sans-serif;
+	min-height: 100vh;
 }
 
-/* Remove margins and padding from the list */
-ul {
-    margin: 0;
-    padding: 0;
+header {
+	font-size: 1.5rem;
 }
 
-/* Style the list items */
-ul li {
-    cursor: pointer;
-    position: relative;
-    padding: 12px 8px 12px 40px;
-    background: #eee;
-    font-size: 18px;
-    transition: 0.2s;
-    list-style: none;
-    width: 550px;
-    margin-bottom: 10px;
-} 
-
-/* Set all odd list items to a different color (zebra-stripes) */
-ul li:nth-child(odd) {
-background: #f9f9f9;
+header, form {
+	min-height: 20vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
-/* Darker background-color on hover */
-ul li:hover {
-background: #ddd;
+form input {
+    width: 25%;
 }
 
-/* When clicked on, add a background color and strike out text */
-ul li.checked {
-background: #888;
-color: #fff;
-text-decoration: line-through;
+form input, form button {
+	padding: 0.5rem;
+	font-size: 1.7rem;
+	border: none;
+	background-color: white;
 }
 
-/* Add a "checked" mark when clicked on */
-ul li.checked::before {
-content: '';
-position: absolute;
-border-color: #fff;
-border-style: solid;
-border-width: 0 2px 2px 0;
-top: 10px;
-left: 16px;
-transform: rotate(45deg);
-height: 15px;
-width: 7px;
+form button {
+	color: white;
+	background-color: #030f4e;
+	cursor: pointer;
+	transition: all 0.3s ease;
+    width: 50px;
+    font-size: 1.7rem;
+    padding: 0.5rem;
 }
 
-/* Style the close button */
-.close {
-position: absolute;
-right: 0;
-top: 0;
-padding: 12px 16px 12px 16px;
+form button:hover {
+	background-color: white;
+	color: #030f4e;
 }
 
-.close:hover {
-background-color: #f44336;
-color: white;
+.todo-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-/* Style the header */
-.header {
-padding: 30px 40px;
-color: white;
-text-align: center;
-font-size: 30px;
+.todo-list{
+	min-width: 30%;
+	list-style: none;
 }
 
-/* Clear floats after the header */
-.header:after {
-content: "";
-display: table;
-clear: both;
+.todo{
+	margin: 0.5rem;
+	background-color: white;
+	color: black;
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: all 0.5s ease;
+
 }
 
-/* Style the input */
-input {
-margin: 0;
-border: none;
-border-radius: 0;
-width: 500px;
-padding: 11px;
-float: left;
-font-size: 16px;
+.todo li{
+	flex: 1;
 }
 
-/* Style the "Add" button */
-.addBtn {
-padding: 10px;
-width: 50px;
-background: white;
-color: #0c1755;
-float: left;
-text-align: center;
-font-size: 16px;
-cursor: pointer;
-transition: 0.3s;
-border-radius: 0;
+.trash-btn, .complete-btn{
+	background-color: #ff6f47;
+	color: white;
+	border: none;
+	padding: 1rem;
+	cursor: pointer;
+	font-size: 1rem;
+
 }
 
-.addBtn:hover {
-background-color: #0c1755;
-color: white;
+.complete-btn{
+	background-color: rgb(73, 204, 73);
 }
+
+.todo-item{
+	padding: 0rem 0.5rem;
+}
+
+.fa-trash,.fa-check{
+	pointer-events: none;
+}
+
+.completed{
+	text-decoration: line-through;
+	opacity: 0.5;
+}
+
+.fall{
+	transform: translateY(8rem) rotateZ(20deg);
+	opacity: 0;
+}
+
+

@@ -1048,3 +1048,136 @@ display: block;
     width: 230px;
     margin: 0px 0px 10px 50px;
 }
+
+.ourteam_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.ourteam {
+    display: flex;
+    flex-direction: column;
+}
+
+.ourteam_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.ourteam_card {
+    margin: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ourteam img {
+    border-radius: 50%;
+    width: 220px;
+    margin-left: 15px;
+}
+
+.ourteam h2, h3, p {
+    font-family: Quicksand;
+    text-align: center;
+}
+
+.ourteam h2 {
+    color: #5a5a5a;
+}
+
+.ourteam h3 {
+    color: #fbbcc0;
+    margin-top: -15px;
+}
+
+.ourteam p {
+    color: #818181;
+    width: 300px;
+    margin-top: -5px;
+}
+
+.ourteam_icons i {
+    color: #5a5a5a;
+    margin: 0px 5px;
+}
+
+.ourteam_icons i:hover {
+    color: #b4b4b4;
+}
+
+.contact {
+    display: flex;
+}
+
+.contact_text {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 30px 0px 30px 70px;
+}
+
+.contact_text h1 {
+    color: #5a5a5a;
+    font-family: Quicksand;
+}
+
+.contact_text p {
+    color: #a4a4a4;
+    font-family: Quicksand;
+    text-align: left;
+    font-size: 16px;
+    line-height: 12px;
+}
+
+.towns {
+    display: flex;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 30px 100px;
+}
+
+form input {
+    border: 2px dotted pink;
+    border-radius: 5px;
+    margin: 20px 0px;
+    width: 500px;
+    height: 50px;
+    padding-left: 20px;
+}
+
+.subject {
+    height: 50px;
+    padding-bottom: 120px;
+}
+
+form button {
+    width: 150px;
+    height: 60px;
+    padding: 5px 14px;
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 2em;
+    letter-spacing: .05em;
+    font-weight: 500;
+    vertical-align: middle;
+    text-align: center;
+    transition: 0.5s;
+    background-color: pink;
+    border: 1px solid white;
+    color: white;
+}
+
+form button:hover {
+    background-color: #abe9b0;
+}

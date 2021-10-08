@@ -64,6 +64,7 @@ body {
     background-color: #e6e6e6;
     list-style: none;
     width: 98%;
+    height: 25px;
     margin: 3px 0px;
     padding: 3px 0px 3px 5px;
     display: flex;
@@ -98,4 +99,5 @@ body {
     right: 5px;
     visibility: hidden;
 }
+
 

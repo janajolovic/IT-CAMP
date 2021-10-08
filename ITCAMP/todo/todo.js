@@ -10,7 +10,10 @@ function showList() {
     let newList = '';
 
     for(let i=0; i < a.length; i++){
-        newList += `<li class="list_item">${a[i]}<i id="done" type="submit" class="fas fa-check"></i><i id="delete" type="submit" class="fas fa-trash-alt"></i></li>`
+        newList += `<li class="list_item">${a[i]}
+            <i id="done" type="button" class="fas fa-check"></i>
+            <i id="delete" type="button" class="fas fa-trash-alt"></i>
+            </li>`
     }
     list.innerHTML = newList;
 }
@@ -22,8 +25,9 @@ form.onsubmit = function(e) {
     a.push(input_add.value);
     document.getElementById("input_add").value = "";
     showList();
-    
 }
+
+
 
 
 
