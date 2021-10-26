@@ -4,8 +4,12 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(11, 0, 61);
+}
+
 .container {
-    background-color: rgb(31, 31, 31);
+    background-color: rgb(11, 0, 61);
     min-height: 100vh; 
     width: 100%;
     display: grid;
@@ -24,4 +28,38 @@
     margin: 20px 30px;
     padding: 15px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.pagination {
+    background-color: white;
+    color: rgb(11, 0, 61);
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+.pagination ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination ul li {
+    list-style: none;
+    padding: 8px 12px;
+    margin: 5px 0px;
+}
+
+.pagination ul li .active,
+.pagination ul li.num:hover,
+.pagination ul li.btn:hover  {
+    color: white;
+    background-color: rgb(11, 0, 61);
 }
