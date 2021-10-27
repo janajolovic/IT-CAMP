@@ -1,9 +1,9 @@
 const limit = 12;
 resData = null;
-let page = 1;
+let page = 2;
 const pages = document.querySelector(".pagination");
 const link = `https://catfact.ninja/facts?page=${page}&limit=${limit}`;
-
+const ul = document.querySelector("ul");
 
 function createCard(text) {
     const container = document.querySelector(".container");
@@ -21,25 +21,26 @@ async function getData() {
         response = await response.json();
         console.log(response)
         response.data.forEach(element => createCard(element.fact))
-
         const pg_num = response.current_page;
         const last_page = response.last_page;
 
-        // pagination(pg_num, last_page)
+        pagination(pg_num, last_page)
     } 
 }
 
 
-// function pagination(page_num, last_page) {
-//     for (let i = 1; i <= last_page; i++) {
-//         const pg_num = document.createElement("a")
-//         pg_num.innerHTML = i;
-//         pages.appendChild(pg_num);
-//     }
-// }
+function pagination(page, total) {
+    let li = '';
+    if (page > 1) {
+        li += `<li class="btn prev  active"><span><i class="fas fa-angle-left"></i> prev</span></li>`;
+    }
+    if (page < total) {
+        li += `<li class="btn next active"><span>next <i class="fas fa-angle-right"></i></span></li>`;
+    }
+    ul.innerHTML = li;
+}
 
 
 getData()
-
 
 
