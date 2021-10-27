@@ -1,6 +1,6 @@
 const limit = 12;
 resData = null;
-let page = 2;
+let page = 27;
 const pages = document.querySelector(".pagination");
 const link = `https://catfact.ninja/facts?page=${page}&limit=${limit}`;
 const ul = document.querySelector("ul");
@@ -34,9 +34,26 @@ function pagination(page, total) {
     if (page > 1) {
         li += `<li class="btn prev  active"><span><i class="fas fa-angle-left"></i> prev</span></li>`;
     }
+    if (page > 4 && page < total-1) {
+        li += ` <li class="num active"><span>1</span></li>
+        <li class="num active"><span>2</span></li>
+        <li class="dots"><span>...</span></li>
+        <li class="num active"><span>${page}</span></li>
+        <li class="dots active"><span>...</span></li>
+        <li class="num active"><span>${total}</span></li>`
+    }
+    if (page == total-1) {
+        li += ` <li class="num active"><span>1</span></li>
+        <li class="num active"><span>2</span></li>
+        <li class="dots"><span>...</span></li>
+        <li class="num active"><span>${page-1}</span></li>
+        <li class="num active"><span>${page}</span></li>
+        <li class="num active"><span>${total}</span></li>`
+    }
     if (page < total) {
         li += `<li class="btn next active"><span>next <i class="fas fa-angle-right"></i></span></li>`;
     }
+
     ul.innerHTML = li;
 }
 
