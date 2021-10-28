@@ -1,8 +1,8 @@
 const limit = 12;
 resData = null;
-let page = 7;
+let page = 1;
 const pages = document.querySelector(".pagination");
-const link = `https://catfact.ninja/facts?page=${page}&limit=${limit}`;
+let link = `https://catfact.ninja/facts?page=${page}&limit=${limit}`;
 const ul = document.querySelector("ul");
 
 function createCard(text) {
@@ -15,11 +15,10 @@ function createCard(text) {
     card.appendChild(title);
 }
 
-async function getData() {
+async function getData(link) {
     let response = await fetch(link)
     if (response.status === 200) {
         response = await response.json();
-        console.log(response)
         response.data.forEach(element => createCard(element.fact))
         const pg_num = response.current_page;
         const last_page = response.last_page;
@@ -35,37 +34,44 @@ function pagination(page, total) {
     prev_page = page-1;
 
     if (page > 1) {
-        li += `<li class="btn prev" onclick="pagination(${page-1}, ${total})">
+        li += `<li class="btn prev" onclick="pagination(${page-1}, ${total}), getData(link)">
                 <span><i class="fas fa-angle-left"></i> prev</span></li>`;
     }
 
     if (page > 2) {
-        li += `<li class="num"><span>1</span></li>`
+        li += `<li class="num" onclick="pagination(1, ${total}), getData(link)"><span>1</span></li>`
         if (page > 3) {
             li += `<li class="dots"><span>...</span></li>`
         }
     }
 
     for (i = prev_page; i <= next_page; i++) {
+        if (i > total) {
+            continue
+        }
+        if (i < 1) {
+            continue
+        }
         if (i === page) {
             li += `<li class="num active"><span>${i}</span></li>`
-        } else li += `<li class="num"><span>${i}</span></li>`
+        } else li += `<li class="num" onclick="pagination(${i}, ${total}), getData(link)"><span>${i}</span></li>`
     }
     
     if (page < total-1) {
         if (page < total - 2) {
             li += `<li class="dots"><span>...</span></li>`
         }
-        li += `<li class="num"><span>${total}</span></li>`
+        li += `<li class="num" onclick="pagination(${total}, ${total}), getData(link)"><span>${total}</span></li>`
     }
     if (page < total) {
-        li += `<li class="btn next" onclick="pagination(${page+1}, ${total})"><span>next <i class="fas fa-angle-right"></i></span></li>`;
+        li += `<li class="btn next" onclick="pagination(${page+1}, ${total}), getData(link)"><span>next <i class="fas fa-angle-right"></i></span></li>`;
     }
     
     ul.innerHTML = li;
+    link = `https://catfact.ninja/facts?page=${page}&limit=${limit}`;
 }
 
 
-getData()
+getData(link)
 
 
