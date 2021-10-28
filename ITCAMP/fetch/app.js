@@ -5,6 +5,7 @@ const pages = document.querySelector(".pagination");
 let link = `https://catfact.ninja/facts?page=${page}&limit=${limit}`;
 const ul = document.querySelector("ul");
 
+
 function createCard(text) {
     const container = document.querySelector(".container");
     const card = document.createElement("div");
@@ -32,6 +33,7 @@ function pagination(page, total) {
     let li = '';
     next_page = page+1;
     prev_page = page-1;
+    link = `https://catfact.ninja/facts?page=${page}&limit=${limit}`;
 
     if (page > 1) {
         li += `<li class="btn prev" onclick="pagination(${page-1}, ${total}), getData(link)">
@@ -68,7 +70,13 @@ function pagination(page, total) {
     }
     
     ul.innerHTML = li;
-    link = `https://catfact.ninja/facts?page=${page}&limit=${limit}`;
+
+
+    const btn = document.querySelector(".submit_btn");
+    const input = document.querySelector(".pg_input");
+    input_value = input.value;
+    btn.setAttribute("onclick", `pagination(${input_value}, ${total}), getData(link)`);
+    console.log(input_value)
 }
 
 
