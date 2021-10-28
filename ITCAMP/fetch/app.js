@@ -1,6 +1,6 @@
 const limit = 12;
 resData = null;
-let page = 27;
+let page = 7;
 const pages = document.querySelector(".pagination");
 const link = `https://catfact.ninja/facts?page=${page}&limit=${limit}`;
 const ul = document.querySelector("ul");
@@ -31,29 +31,37 @@ async function getData() {
 
 function pagination(page, total) {
     let li = '';
+    next_page = page+1;
+    prev_page = page-1;
+
     if (page > 1) {
-        li += `<li class="btn prev  active"><span><i class="fas fa-angle-left"></i> prev</span></li>`;
-    }
-    if (page > 4 && page < total-1) {
-        li += ` <li class="num active"><span>1</span></li>
-        <li class="num active"><span>2</span></li>
-        <li class="dots"><span>...</span></li>
-        <li class="num active"><span>${page}</span></li>
-        <li class="dots active"><span>...</span></li>
-        <li class="num active"><span>${total}</span></li>`
-    }
-    if (page == total-1) {
-        li += ` <li class="num active"><span>1</span></li>
-        <li class="num active"><span>2</span></li>
-        <li class="dots"><span>...</span></li>
-        <li class="num active"><span>${page-1}</span></li>
-        <li class="num active"><span>${page}</span></li>
-        <li class="num active"><span>${total}</span></li>`
-    }
-    if (page < total) {
-        li += `<li class="btn next active"><span>next <i class="fas fa-angle-right"></i></span></li>`;
+        li += `<li class="btn prev" onclick="pagination(${page-1}, ${total})">
+                <span><i class="fas fa-angle-left"></i> prev</span></li>`;
     }
 
+    if (page > 2) {
+        li += `<li class="num"><span>1</span></li>`
+        if (page > 3) {
+            li += `<li class="dots"><span>...</span></li>`
+        }
+    }
+
+    for (i = prev_page; i <= next_page; i++) {
+        if (i === page) {
+            li += `<li class="num active"><span>${i}</span></li>`
+        } else li += `<li class="num"><span>${i}</span></li>`
+    }
+    
+    if (page < total-1) {
+        if (page < total - 2) {
+            li += `<li class="dots"><span>...</span></li>`
+        }
+        li += `<li class="num"><span>${total}</span></li>`
+    }
+    if (page < total) {
+        li += `<li class="btn next" onclick="pagination(${page+1}, ${total})"><span>next <i class="fas fa-angle-right"></i></span></li>`;
+    }
+    
     ul.innerHTML = li;
 }
 

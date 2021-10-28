@@ -33,7 +33,7 @@ body {
 .pagination {
     background-color: white;
     color: rgb(11, 0, 61);
-    width: 400px;
+    width: 460px;
     display: flex;
     justify-content: center;
     margin: auto;
@@ -54,10 +54,10 @@ body {
 .pagination ul li {
     list-style: none;
     padding: 8px 12px;
-    margin: 5px 0px;
+    margin: 5px 2px;
 }
 
-.pagination ul li .active,
+.pagination ul li.active,
 .pagination ul li.num:hover,
 .pagination ul li.btn:hover  {
     color: white;
