@@ -4,7 +4,7 @@ let page = 1;
 const pages = document.querySelector(".pagination");
 let link = `https://catfact.ninja/facts?page=${page}&limit=${limit}`;
 const ul = document.querySelector("ul");
-
+const btn = document.querySelector(".submit_btn");
 
 function createCard(text) {
     const container = document.querySelector(".container");
@@ -71,15 +71,25 @@ function pagination(page, total) {
     
     ul.innerHTML = li;
 
-
-    const btn = document.querySelector(".submit_btn");
-    const input = document.querySelector(".pg_input");
-    input_value = input.value;
-    btn.setAttribute("onclick", `pagination(${input_value}, ${total}), getData(link)`);
-    console.log(input_value)
+    
 }
 
+btn.setAttribute("onclick", 'FindPage(28)');
+
+function FindPage(total) {
+    let input = document.querySelector(".pg_input").value;
+    link = `https://catfact.ninja/facts?page=${input}&limit=${limit}`;
+    page = input;
+    console.log(page, input, link, total)
+    pagination(page, total)
+    getData(link)
+    input = '';
+}
 
 getData(link)
 
 
+// TODO
+// reset input value 
+// fix pagination on button
+// make func
