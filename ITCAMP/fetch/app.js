@@ -80,8 +80,6 @@ function Clear() {
     }
 }
 
-btn.setAttribute("onclick", 'Clear(), FindPage(28)');
-
 function FindPage(total) {
     let input = document.querySelector(".pg_input").value;
     link = `https://catfact.ninja/facts?page=${input}&limit=${limit}`;
@@ -91,8 +89,7 @@ function FindPage(total) {
     input = '';
 }
 
+btn.setAttribute("onclick", 'Clear(), FindPage(28)');
+
+
 getData(link)
-
-
-// TODO
-// reset input value 
