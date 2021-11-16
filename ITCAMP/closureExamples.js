@@ -44,14 +44,32 @@
 
 
 
+// function makeAdder(x) {
+//     return function(y) {
+//       return x + y;
+//     };
+//   }
+  
+//   var add5 = makeAdder(5);
+//   var add10 = makeAdder(10);
+  
+//   console.log(add5(2));  // 7
+//   console.log(add10(2)); // 12
+
+
+
 function makeAdder(x) {
-    return function(y) {
-      return x + y;
-    };
+  function add(y) {
+    return x + y;
   }
-  
-  var add5 = makeAdder(5);
-  var add10 = makeAdder(10);
-  
-  console.log(add5(2));  // 7
-  console.log(add10(2)); // 12
+  return add;
+}
+
+const add3 = makeAdder(3);
+const add10 = makeAdder(10);
+
+plus3 = add3(3);
+plus5 = add10(5);
+
+console.log(plus3);
+console.log(plus5);
