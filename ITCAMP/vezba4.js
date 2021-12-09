@@ -1,13 +1,12 @@
-import fetch from "node-fetch";
-
-var data = {}
-
-const getData = async () => {
-
-    const response = await fetch("https://api.github.com/users/github")
-    const res = await response.json();
-    data = res;
+obj = {
+    name: "davud",
+    nivo_programiranja: Infinity
 }
 
-await getData();
-console.log(data)
+console.log("nivo programiranja: ", obj.nivo_programiranja)
+
+
+
+
+
+// 
