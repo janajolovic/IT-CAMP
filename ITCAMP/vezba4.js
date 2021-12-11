@@ -1,12 +1,12 @@
-obj = {
-    name: "davud",
-    nivo_programiranja: Infinity
+function isDuoDigit(num) {
+    let set = new Set(String(num).split(""));
+    if (set.size === 2) {
+        return "y";
+    } else return "n";
 }
 
-console.log("nivo programiranja: ", obj.nivo_programiranja)
 
-
-
-
-
-// 
+console.log(isDuoDigit(11221));
+console.log(isDuoDigit(3433));
+console.log(isDuoDigit(112214521));
+console.log(isDuoDigit(1));
