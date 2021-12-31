@@ -5,7 +5,8 @@ const TodoList = () => {
     let tasks = ['first task', 'second task']
     const deleteTodo = (e) => {
         const todo_text = e.target.value;
-        tasks = tasks.filter(t => t===todo_text)
+        tasks = tasks.filter(t => t!==todo_text)
+        console.log(tasks)
     }
     return (
         <div className='todo-list'>
