@@ -2,12 +2,16 @@ import React from 'react'
 import Todo from './Todo'
 
 const TodoList = () => {
-    const tasks = ['first task', 'second task']
+    let tasks = ['first task', 'second task']
+    const deleteTodo = (e) => {
+        const todo_text = e.target.value;
+        tasks = tasks.filter(t => t===todo_text)
+    }
     return (
         <div className='todo-list'>
             {
-                tasks.map((t) => {
-                    return <Todo text={t} />
+                tasks.map((t, i) => {
+                    return <Todo text={t} deleteTodo={deleteTodo} />
                 })
             }
 

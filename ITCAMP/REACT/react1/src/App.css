@@ -46,3 +46,7 @@
 .delete-btn:hover {
   color: red;
 }
+
+.delete-btn i {
+  pointer-events: none;
+}
