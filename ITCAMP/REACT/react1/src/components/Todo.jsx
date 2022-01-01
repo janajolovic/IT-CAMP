@@ -9,4 +9,5 @@ const Todo = ({text, deleteTodo}) => {
     )
 }
 
+
 export default Todo
