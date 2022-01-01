@@ -29,7 +29,7 @@ const TodoList = () => {
             {tasks.map(t => {
                 return <Todo text={t} deleteTodo={deleteTodo} />
             })}
-        <button onClick={removeLast}>Remove last task</button>
+        <button className="removeAll" onClick={removeLast}>Remove last task</button>
         </div>
     )
 }
