@@ -1,13 +1,11 @@
 import React from 'react'
 
-const Input = () => {
-    const addFunc = (e) => {
-        console.log(e.target.value);
-    }
+const Input = ({inputHandler, addTodo, input}) => {
+    
     return (
         <div className='input-div'>
-            <input className='input' type="text" onChange={addFunc}></input>
-            <button className='btn'> + </button>
+            <input className='input' type="text" value={input} onChange={inputHandler}></input>
+            <button className='btn' onClick={addTodo}> + </button>
         </div>
     )
 }
